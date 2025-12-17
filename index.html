@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Accomodation Colorado mountains discover luxury hotel "
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./images/pattern.png" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <script src="./script.js" defer></script>
+    <title>The Overlook Hotel - Welcome home</title>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="animate" data-animation="fadeIn">
+        <p class="nav-logo">The Overlook Hotel</p>
+        <nav class="main-navigation animate" data-animation="fadeInUp">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#features">What to do</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a class="important-link" href="#booking">Book now!</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="hero" class="hero animate" data-animation="fadeIn">
+          <video
+            class="bg-video"
+            playsinline
+            autoplay
+            loop
+            muted
+            poster="./images/poster.png"
+            role="none"
+          >
+            <source src="videos/background.m4v" type="video/mp4" />
+          </video>
+          <div class="hero-content">
+            <h1 class="title">The Overlook Hotel</h1>
+            <p class="sub-title">Where dreams come to stay... Forever.</p>
+            <a href="#features">
+              <button class="hero-button">
+                Discover more <i class="ph ph-arrow-right"></i>
+              </button>
+            </a>
+          </div>
+        </section>
+        <section id="booking" class="booking animate" data-animation="fadeIn">
+          <div class="booking-text">
+            <h2>Book your stay</h2>
+            <p class="quote animate" data-animation="slideInUp">
+              <q>Sometimes human places, create inhuman monsters</q>
+            </p>
+          </div>
+          <form id="booking-form">
+            <div class="input-container">
+              <label for="email-form">Your email address</label>
+              <input
+                type="email"
+                id="email-form"
+                placeholder="jack_torrance@gmail.com"
+                autocomplete="true"
+                required
+              />
+            </div>
+            <button type="submit" onclick="openModal(); return false;">
+              Reserve now
+            </button>
+          </form>
+        </section>
+        <section class="slider">
+          <div class="carousel animate" data-animation="slideInRight">
+            <div class="slide">
+              <img src="./images/twins.jpg" alt="Friendly twins" />
+              <div class="slide-text">
+                <h2>Bring all your family</h2>
+                <p>
+                  The Grady twins welcome new playmates... forever and ever and
+                  ever
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="./images/maze.webp" alt="Beautiful maze" />
+              <div class="slide-text">
+                <h2>Experience Winter Hospitality</h2>
+                <p>
+                  Get lost in our famous hedge maze. Don't worry, we'll find
+                  you.
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="./images/lloyd.webp" alt="Our famous bartender" />
+              <div class="slide-text">
+                <h2>Enjoy Our Signature Cocktails</h2>
+                <p>
+                  Lloyd's always ready with a drink. It's 5 o'clock somewhere...
+                  in 1921.
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="./images/jack-torrance.jpg" alt="The caretaker" />
+              <div class="slide-text">
+                <h2>Staff Will Make You Feel at Home</h2>
+                <p>
+                  Jack Torrance leads our customer service team. He's very
+                  dedicated.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="features"
+          class="features animate"
+          data-animation="slideInLeft"
+        >
+          <h2>Things to do</h2>
+          <div class="cards-container">
+            <div class="feature-card">
+              <h3>Grand Ballroom</h3>
+              <i class="ph ph-martini"></i>
+              <p>
+                A stunning venue for unforgettable parties and events. Featuring
+                our signature red carpet.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3>Hedge Maze</h3>
+              <i class="ph ph-corners-in"></i>
+              <p>
+                A beautiful outdoor labyrinth. Perfect for getting lost... we
+                mean, exploring!
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3>Gold Room</h3>
+              <i class="ph ph-bathtub"></i>
+              <p>
+                Fine dining experience with views. We recommend the carpet theme
+                décor.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3>Library</h3>
+              <i class="ph ph-book-open"></i>
+              <p>Quiet retreat for reading and reflection.</p>
+            </div>
+          </div>
+        </section>
+        <section id="faq" class="faq">
+          <div class="content-container animate" data-animation="slideInUp">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-content">
+              <details>
+                <summary>Is the hotel really "closed" for the winter?</summary>
+                <p>
+                  Not at all! We're open year-round. Though some guests do
+                  report... unusual occurrences during the off-season. Most
+                  guests find this adds to the charm.
+                </p>
+              </details>
+              <details>
+                <summary>Can children bring tricycles in the hallways?</summary>
+                <p>
+                  We encourage it! Our hallways are expertly designed for
+                  recreational cycling. Watch out for the carpet pattern—it's
+                  hypnotizing but safe.
+                </p>
+              </details>
+              <details>
+                <summary>What's in Room 217?</summary>
+                <p>
+                  A lovely suite with all modern amenities. We've renovated it
+                  extensively. Nothing to worry about. Absolutely nothing.
+                </p>
+              </details>
+              <details>
+                <summary>Is there a blood elevator?</summary>
+                <p>
+                  We prefer to call it our "signature art installation." It's
+                  purely decorative. Well, mostly. Don't mind the water damage
+                  on the hallway carpets.
+                </p>
+              </details>
+              <details>
+                <summary>What's your refund policy?</summary>
+                <p>
+                  Once you book, you're with us. There's no leaving. Kidding!
+                  Full refunds available up to 24 hours before check-in. Mostly.
+                </p>
+              </details>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>
+          © 2024 The Overlook Hotel.
+          <q
+            >Monsters are real. Ghosts are too. They live inside of us, and
+            sometimes, they win.</q
+          >
+          — Stephen King
+        </p>
+        <p>
+          Made by
+          <a href="https://github.com/totokartonio" target="_blank">toto</a>
+        </p>
+      </footer>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <p>All work and no play makes Jack a dull boy</p>
+        <p>All work and no play makes Jack a dull boy</p>
+        <p>All work and no play mmakes Jack a dull boy</p>
+        <p>vAll work and no PLay ma es Jack a dull boy</p>
+        <p>All work and no play makes Jack a dull boy</p>
+        <p>All work and no play makes Jack a dull boy</p>
+      </div>
+    </div>
+  </body>
+</html>
