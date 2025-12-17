@@ -30,6 +30,13 @@
   scrollbar-color: var(--color-gold) var(--color-black);
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 main {
   width: 100%;
 }
