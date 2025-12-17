@@ -596,23 +596,54 @@ footer {
   }
 }
 
-.is-visible[data-animation="fadeIn"] {
+/* Initial transform states if js is enabled  */
+
+.js-enabled .animate[data-animation="fadeIn"] {
+  opacity: 0;
+}
+
+.js-enabled .animate[data-animation="fadeInUp"] {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.js-enabled .animate[data-animation="slideInRight"] {
+  transform: translateX(50px);
+}
+
+.js-enabled .animate[data-animation="slideInLeft"] {
+  transform: translateX(-50px);
+}
+
+.js-enabled .animate[data-animation="slideInUp"] {
+  transform: translateY(50px);
+}
+
+/* Reseting transform states after animation */
+
+.js-enabled .is-visible[data-animation="fadeIn"] {
+  opacity: 1;
   animation: fadeIn 1s ease-out;
 }
 
-.is-visible[data-animation="fadeInUp"] {
+.js-enabled .is-visible[data-animation="fadeInUp"] {
+  opacity: 1;
+  transform: translateY(0);
   animation: fadeInUp 0.5s ease-out;
 }
 
-.is-visible[data-animation="slideInRight"] {
+.js-enabled.js-enabled .is-visible[data-animation="slideInRight"] {
+  transform: translateX(0);
   animation: slideInRight 1s ease-out forwards;
 }
 
-.is-visible[data-animation="slideInLeft"] {
+.js-enabled .is-visible[data-animation="slideInLeft"] {
+  transform: translateX(0);
   animation: slideInLeft 1s ease-out forwards;
 }
 
-.is-visible[data-animation="slideInUp"] {
+.js-enabled .is-visible[data-animation="slideInUp"] {
+  transform: translateY(0);
   animation: slideInUp 1s ease-out forwards;
 }
 
